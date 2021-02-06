@@ -17,11 +17,17 @@
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
-    "snowpack": "^3.0.11",
-    "postcss-cli": "^8.3.1",
-    "postcss": "^8.2.5",
-    "autoprefixer": "^10.2.4",
     "@snowpack/plugin-build-script": "^2.1.0",
-    "prettier": "^2.2.1"
+    "@snowpack/plugin-react-refresh": "^2.4.0",
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.5",
+    "postcss-cli": "^8.3.1",
+    "prettier": "^2.2.1",
+    "snowpack": "^3.0.11"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "tabWidth": 2
   }
 }
