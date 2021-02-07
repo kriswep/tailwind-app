@@ -11,11 +11,11 @@ const App = (props) => {
 
   const { name } = props;
   return (
-    <div className="p-2">
-      <h1 className="text-4xl p-2 rounded-md shadow-md text-white bg-black mb-5">
+    <div className="w-full min-h-screen p-2 bg-blue-900">
+      <h1 className="p-2 mb-5 text-3xl font-bold text-blue-100">
         Hello {name}
       </h1>
-      <p className="text-xl p-2 rounded-md shadow-md text-green-200 bg-green-800">
+      <p className="p-2 text-xl text-blue-100">
         Opened for <code>{count}</code> seconds.
       </p>
     </div>
