@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Navbar from './Navbar';
 
 const App = (props) => {
   // Create the count state.
@@ -11,11 +12,12 @@ const App = (props) => {
 
   const { name } = props;
   return (
-    <div className="w-full min-h-screen p-2 bg-blue-900">
-      <h1 className="p-2 mb-5 text-3xl font-bold text-blue-100">
+    <div className="w-full min-h-screen bg-indigo-900">
+      <Navbar />
+      <h1 className="px-4 m-6 text-3xl font-bold text-indigo-100">
         Hello {name}
       </h1>
-      <p className="p-2 text-xl text-blue-100">
+      <p className="px-4 m-6 text-indigo-100 text-l">
         Opened for <code>{count}</code> seconds.
       </p>
     </div>
