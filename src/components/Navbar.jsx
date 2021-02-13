@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+  let location = useLocation();
+
   return (
     <nav className="flex items-center justify-between px-4 text-gray-900 align-middle bg-gray-100 text-l">
       {/* Logo */}
-      <a
-        href="./"
+      <Link
+        to="/"
         className="flex items-center py-6 mx-6 font-bold transition-colors duration-300 hover:text-gray-600"
       >
         <span className="mr-2">
@@ -25,15 +28,17 @@ const Navbar = () => {
           </svg>
         </span>
         Tailwind-app
-      </a>
+      </Link>
       {/* Primary */}
       <div className="flex border-collapse">
-        <a
-          href="#"
-          className="inline-block px-6 py-6 transition-colors duration-300 transform -skew-x-12 border-l border-r border-yellow-800 hover:text-gray-900 hover:bg-yellow-400"
+        <Link
+          to="/features"
+          className={`${
+            location.pathname === '/features' ? 'bg-yellow-300' : ''
+          } inline-block px-6 py-6 transition-colors duration-300 transform -skew-x-12 border-l border-r border-yellow-800 hover:text-gray-900 hover:bg-yellow-400`}
         >
           <span className="inline-block transform skew-x-12">Features</span>
-        </a>
+        </Link>
         <a
           href="#"
           className="px-6 py-6 transition-colors duration-300 transform -skew-x-12 border-r border-yellow-800 hover:text-gray-900 hover:bg-yellow-400"
