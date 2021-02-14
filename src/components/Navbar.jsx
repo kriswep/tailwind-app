@@ -44,7 +44,7 @@ const Navbar = () => {
       </Link>
       {/* Primary */}
       <div className="flex">
-        <NavItem to="/features" text="Features" first />
+        <NavItem to="/card" text="Cards" first />
         <NavItem to="/pricing" text="Pricing" />
       </div>
       {/* Secondary */}

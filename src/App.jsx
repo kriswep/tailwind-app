@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
+import CardPage from './components/Card';
 
 const Home = () => {
   // Create the count state.
@@ -29,7 +30,9 @@ const App = () => {
         <Navbar />
 
         <Switch>
-          <Route path="/features">{/* <About /> */}</Route>
+          <Route path="/card">
+            <CardPage />
+          </Route>
           <Route path="/pricing">{/* <About /> */}</Route>
           <Route path="/signin">{/* <About /> */}</Route>
           <Route path="/signup">{/* <About /> */}</Route>
