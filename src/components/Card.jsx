@@ -3,14 +3,17 @@ import React from 'react';
 const Card = () => {
   return (
     // <div className="flex justify-center min-w-full min-h-screen pt-8 bg-gray-300">
-    <section className="bg-gray-200 shadow-sm w-72 h-1/2 rounded-2xl">
+    <section className="bg-gray-200 shadow-sm md:hover:shadow-md hover:shadow-2xl w-72 h-1/2 rounded-2xl">
       <div className="relative">
         <img
           src={`https://source.unsplash.com/800x600/?house,${Math.random()}`}
           alt="a nice house"
           className="w-full h-56 bg-gray-400 rounded-t-2xl"
         />
-        <button className="absolute p-1 bg-gray-200 rounded-md shadow top-4 right-4">
+        <button
+          className="absolute p-1 bg-gray-200 rounded-md shadow top-4 right-4"
+          aria-label="save object"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
@@ -22,7 +25,7 @@ const Card = () => {
         </button>
       </div>
       <div className="p-4 pt-6 space-y-2">
-        <p className="inline-block p-1 pl-3 pr-3 text-xs text-yellow-600 bg-red-200 rounded-xl">
+        <p className="inline-block p-1 pl-3 pr-3 text-xs text-yellow-800 bg-red-200 rounded-xl">
           House
         </p>
         <h2 className="text-lg font-bold">Living your dream</h2>
@@ -39,7 +42,7 @@ const Card = () => {
               clipRule="evenodd"
             />
           </svg>
-          <p className="font-light text-gray-400">Berlin, Germany</p>
+          <p className="font-light text-gray-600">Berlin, Germany</p>
         </div>
         <div className="flex items-center justify-between pt-4 space-x-4">
           <div className="flex space-x-2">
@@ -76,7 +79,7 @@ const Card = () => {
             </span>
           </div>
           <p className="font-bold">
-            $2100 <span className="font-light text-gray-400">/ per month</span>
+            $2100 <span className="font-light text-gray-600">per month</span>
           </p>
         </div>
       </div>

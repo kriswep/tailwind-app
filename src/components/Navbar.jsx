@@ -68,6 +68,7 @@ const Navbar = () => {
         <button
           to="/"
           onClick={toggleMobileNav}
+          aria-label={`${showMobileNav ? 'close menu' : 'open menu'}`}
           className="flex items-center py-6 mx-6 font-bold transition-colors duration-300 focus:outline-none md:hidden hover:text-gray-600 "
         >
           <span className="mr-2">
