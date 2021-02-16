@@ -24,8 +24,8 @@ const Card = () => {
           </svg>
         </button>
       </div>
-      <div className="p-4 pt-6 space-y-2">
-        <p className="inline-block p-1 pl-3 pr-3 text-xs text-yellow-800 bg-red-200 rounded-xl">
+      <div className="flex flex-col items-start p-4 pt-6 space-y-2">
+        <p className="p-1 pl-3 pr-3 text-xs text-yellow-800 bg-red-200 rounded-xl">
           House
         </p>
         <h2 className="text-lg font-bold">Living your dream</h2>
@@ -90,7 +90,7 @@ const Card = () => {
 
 const CardPage = () => {
   return (
-    <div className="flex flex-wrap items-baseline justify-center flex-1 min-w-full gap-6 px-2 py-8 bg-purple-500">
+    <div className="flex flex-wrap items-baseline justify-center flex-1 min-w-full gap-6 px-2 py-8 bg-purple-500 from-purple-300 to-purple-500 bg-gradient-to-br">
       <Card />
       <Card />
       <Card />
