@@ -23,8 +23,6 @@ const Navbar = () => {
     setShowMobileNav(!showMobileNav);
   });
 
-  console.log(showMobileNav);
-
   return (
     <>
       <nav className="flex items-center justify-between px-4 space-x-4 text-gray-900 align-middle bg-gray-100 text-l">
@@ -55,7 +53,7 @@ const Navbar = () => {
         {/* Primary */}
         <div className="hidden md:flex">
           <NavItem to="/card" text="Cards" first />
-          <NavItem to="/pricing" text="Pricing" />
+          <NavItem to="/button" text="Buttons" />
         </div>
 
         {/* Secondary */}
@@ -96,7 +94,7 @@ const Navbar = () => {
         } flex flex-col px-4 text-gray-900 align-middle bg-gray-100 text-l border-t-2 border-yellow-800`}
       >
         <NavItem to="/card" text="Cards" first />
-        <NavItem to="/pricing" text="Pricing" first />
+        <NavItem to="/button" text="Buttons" first />
         <NavItem to="/signin" text="Sign In" first />
         <NavItem to="/signup" text="Sign up" first />
       </nav>

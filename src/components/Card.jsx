@@ -3,7 +3,7 @@ import React from 'react';
 const Card = () => {
   return (
     // <div className="flex justify-center min-w-full min-h-screen pt-8 bg-gray-300">
-    <section className="bg-gray-200 shadow-sm md:hover:shadow-md hover:shadow-2xl w-72 h-1/2 rounded-2xl">
+    <section className="m-1 transition-shadow duration-300 bg-gray-200 shadow-sm hover:shadow-2xl w-72 rounded-2xl">
       <div className="relative">
         <img
           src={`https://source.unsplash.com/800x600/?house,${Math.random()}`}
@@ -90,7 +90,7 @@ const Card = () => {
 
 const CardPage = () => {
   return (
-    <div className="flex flex-wrap justify-center min-w-full min-h-screen gap-6 px-2 py-8 bg-gray-300">
+    <div className="flex flex-wrap items-baseline justify-center flex-1 min-w-full gap-6 px-2 py-8 bg-purple-500">
       <Card />
       <Card />
       <Card />
