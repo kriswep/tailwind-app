@@ -44,7 +44,7 @@ const Card = () => {
           </svg>
           <p className="font-light text-gray-600">Berlin, Germany</p>
         </div>
-        <div className="flex items-center justify-between pt-4 space-x-4">
+        <div className="flex self-stretch justify-between pt-4 space-x-4">
           <div className="flex space-x-2">
             <div className="flex items-center space-x-1">
               <svg
