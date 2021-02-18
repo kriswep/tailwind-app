@@ -6,7 +6,7 @@ const Card = () => {
     <section className="m-1 transition-shadow duration-300 bg-gray-200 shadow-sm hover:shadow-2xl w-72 rounded-2xl">
       <div className="relative">
         <img
-          src={`https://source.unsplash.com/800x600/?house,${Math.random()}`}
+          src={`https://source.unsplash.com/400x300/?house,${Math.random()}`}
           alt="a nice house"
           className="w-full h-56 bg-gray-400 rounded-t-2xl"
         />
